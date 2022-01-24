@@ -9,10 +9,7 @@ from measurement import (
 
 
 NUMBER_OF_QUBITS = 3
-NUMBER_OF_SAMPLES = (
-    2 ** 8
-)  # With this many shots, you can see the effect of the noise model. With 2**10 shots,
-# effects of noise are almost negligible for 3 qubits
+NUMBER_OF_SAMPLES = 2**13
 PARAMETERS_MAP = {1: M1_GRID_PARAMETERS, 2: M2_GRID_PARAMETERS, 3: M3_GRID_PARAMETERS}
 RESULTS_DIR_NAME = "results/jaqalpaq/grid/{}/".format(NUMBER_OF_QUBITS)
 
