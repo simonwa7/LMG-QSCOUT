@@ -10,9 +10,8 @@ from measurement import (
 
 NUMBER_OF_QUBITS = 3
 NUMBER_OF_SAMPLES = (
-    2 ** 8
-)  # With this many shots, you can see the effect of the noise model. With 2**10 shots,
-# effects of noise are almost negligible for 3 qubits
+    10000
+)  
 PARAMETERS_MAP = {1: M1_POINT_PARAMETER_VALUES, 2: M2_POINT_PARAMETER_VALUES, 3: M3_POINT_PARAMETER_VALUES}
 RESULTS_DIR_NAME = "results/jaqalpaq/point/{}/".format(NUMBER_OF_QUBITS)
 
