@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    182564,       4854]
-NotebookOptionsPosition[    180880,       4818]
-NotebookOutlinePosition[    181450,       4840]
-CellTagsIndexPosition[    181377,       4835]
+NotebookDataLength[    183195,       4868]
+NotebookOptionsPosition[    181507,       4832]
+NotebookOutlinePosition[    182082,       4854]
+CellTagsIndexPosition[    182009,       4849]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -132,8 +132,8 @@ Cell[BoxData[
    RowBox[{
     RowBox[{
     "fp1", "=", 
-     "\"\</Users/krobbi02/Documents/QI_Research/SandiaFolder/NoisyJaqalData/\
-point/1/single_point_eval.txt\>\""}], ";"}], "\[IndentingNewLine]", 
+     "\"\</Users/williamsimon/Desktop/Research/QSCOUT/LMG-QSCOUT/results/\
+jaqalpaq/point/ion-sim-noise/1.txt\>\""}], ";"}], "\[IndentingNewLine]", 
    RowBox[{"(*", " ", 
     RowBox[{"2", " ", 
      RowBox[{"QUBIT", ":", " ", 
@@ -144,8 +144,8 @@ point/1/single_point_eval.txt\>\""}], ";"}], "\[IndentingNewLine]",
    RowBox[{
     RowBox[{
     "fp2", "=", 
-     "\"\</Users/krobbi02/Documents/QI_Research/SandiaFolder/NoisyJaqalData/\
-point/2/single_point_eval.txt\>\""}], ";"}], "\[IndentingNewLine]", 
+     "\"\</Users/williamsimon/Desktop/Research/QSCOUT/LMG-QSCOUT/results/\
+jaqalpaq/point/ion-sim-noise/2.txt\>\""}], ";"}], "\[IndentingNewLine]", 
    RowBox[{"(*", " ", 
     RowBox[{"3", " ", 
      RowBox[{"QUBIT", ":", " ", 
@@ -156,8 +156,8 @@ point/2/single_point_eval.txt\>\""}], ";"}], "\[IndentingNewLine]",
    RowBox[{
     RowBox[{
     "fp3", "=", 
-     "\"\</Users/krobbi02/Documents/QI_Research/SandiaFolder/NoisyJaqalData/\
-point/3/single_point_eval.txt\>\""}], ";"}], "\[IndentingNewLine]", 
+     "\"\</Users/williamsimon/Desktop/Research/QSCOUT/LMG-QSCOUT/results/\
+jaqalpaq/point/ion-sim-noise/3.txt\>\""}], ";"}], "\[IndentingNewLine]", 
    RowBox[{"(*", " ", 
     RowBox[{"1", " ", 
      RowBox[{"QUBIT", ":", " ", 
@@ -443,9 +443,11 @@ point/3/single_point_eval.txt\>\""}], ";"}], "\[IndentingNewLine]",
   3.852028064914689*^9, 3.852028111191762*^9}, {3.8520286558979807`*^9, 
   3.852028662676731*^9}, {3.852028912134903*^9, 3.852028953433939*^9}, {
   3.852029129767432*^9, 3.8520291363710814`*^9}, {3.8520298931446943`*^9, 
-  3.8520299128861217`*^9}, {3.85203577477283*^9, 
-  3.852035776200543*^9}},ExpressionUUID->"084df1b7-e6b3-4160-9f31-\
-0113e7ea164e"],
+  3.8520299128861217`*^9}, {3.85203577477283*^9, 3.852035776200543*^9}, {
+  3.85212311854346*^9, 3.852123140654047*^9}, {3.852123529321048*^9, 
+  3.852123553307234*^9}},
+ CellLabel->
+  "In[369]:=",ExpressionUUID->"084df1b7-e6b3-4160-9f31-0113e7ea164e"],
 
 Cell[CellGroupData[{
 
@@ -542,44 +544,46 @@ Cell[BoxData[
    "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"bw", "=", 
-     RowBox[{"{", ".5", "}"}]}], ";", " ", 
-    RowBox[{"(*", " ", 
-     RowBox[{"Pick", " ", "a", " ", "bin", " ", 
-      RowBox[{"width", "."}]}], " ", "*)"}], "\[IndentingNewLine]", 
-    RowBox[{"tf", "=", "25"}], ";", " ", 
-    RowBox[{"(*", " ", 
-     RowBox[{"Plot", " ", "title", " ", 
-      RowBox[{"(", "label", ")"}], " ", "font", " ", 
-      RowBox[{"size", "."}]}], " ", "*)"}], "\[IndentingNewLine]", 
-    RowBox[{"af", "=", "17"}], ";", 
-    RowBox[{"(*", " ", 
-     RowBox[{"Axes", " ", "label", " ", "font", " ", 
-      RowBox[{"size", "."}]}], " ", "*)"}], "\[IndentingNewLine]", 
-    RowBox[{"ListPlot", "[", 
-     RowBox[{
-      RowBox[{"pldata", "[", 
-       RowBox[{"reslist1", ",", "bw"}], "]"}], ",", 
-      RowBox[{"Joined", "\[Rule]", "True"}], ",", 
-      RowBox[{"ImageSize", "\[Rule]", "Large"}], ",", 
-      RowBox[{"AxesLabel", "\[Rule]", 
-       RowBox[{"{", 
-        RowBox[{
-         RowBox[{"Style", "[", 
-          RowBox[{
-          "\"\<Sampled \[LeftAngleBracket]H\[RightAngleBracket] Value\>\"", 
-           ",", 
-           RowBox[{"FontSize", "\[Rule]", "af"}]}], "]"}], ",", 
-         RowBox[{"Style", "[", 
-          RowBox[{
-          "\"\<Sampled \[LeftAngleBracket]H\[RightAngleBracket] Probability\>\
-\"", ",", 
-           RowBox[{"FontSize", "\[Rule]", "af"}]}], "]"}]}], "}"}]}], ",", 
-      RowBox[{"PlotLabel", "\[Rule]", 
-       RowBox[{"Style", "[", 
-        RowBox[{
-        "\"\<1-Qubit LMG \[LeftAngleBracket]H\[RightAngleBracket] Estimates\>\
-\"", ",", 
-         RowBox[{"FontSize", "\[Rule]", "tf"}]}], "]"}]}]}], "]"}]}], 
+     RowBox[{"{", ".5", "}"}]}], ";"}], " ", 
+   RowBox[{"(*", " ", 
+    RowBox[{"Pick", " ", "a", " ", "bin", " ", 
+     RowBox[{"width", "."}]}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"tf", "=", "25"}], ";"}], " ", 
+   RowBox[{"(*", " ", 
+    RowBox[{"Plot", " ", "title", " ", 
+     RowBox[{"(", "label", ")"}], " ", "font", " ", 
+     RowBox[{"size", "."}]}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"af", "=", "17"}], ";"}], 
+   RowBox[{"(*", " ", 
+    RowBox[{"Axes", " ", "label", " ", "font", " ", 
+     RowBox[{"size", "."}]}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"ListPlot", "[", 
+    RowBox[{
+     RowBox[{"pldata", "[", 
+      RowBox[{"reslist1", ",", "bw"}], "]"}], ",", 
+     RowBox[{"Joined", "\[Rule]", "True"}], ",", 
+     RowBox[{"ImageSize", "\[Rule]", "Large"}], ",", 
+     RowBox[{"AxesLabel", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Style", "[", 
+         RowBox[{
+         "\"\<Sampled \[LeftAngleBracket]H\[RightAngleBracket] Value\>\"", 
+          ",", 
+          RowBox[{"FontSize", "\[Rule]", "af"}]}], "]"}], ",", 
+        RowBox[{"Style", "[", 
+         RowBox[{
+         "\"\<Sampled \[LeftAngleBracket]H\[RightAngleBracket] \
+Probability\>\"", ",", 
+          RowBox[{"FontSize", "\[Rule]", "af"}]}], "]"}]}], "}"}]}], ",", 
+     RowBox[{"PlotLabel", "\[Rule]", 
+      RowBox[{"Style", "[", 
+       RowBox[{
+       "\"\<1-Qubit LMG \[LeftAngleBracket]H\[RightAngleBracket] \
+Estimates\>\"", ",", 
+        RowBox[{"FontSize", "\[Rule]", "tf"}]}], "]"}]}]}], "]"}], 
    "\[IndentingNewLine]", 
    RowBox[{"ListPlot", "[", 
     RowBox[{
@@ -690,7 +694,7 @@ Count\>\"", ",",
   3.852029556043885*^9, 3.852029801404902*^9}, {3.8520304610460367`*^9, 
   3.852030468795227*^9}},
  CellLabel->
-  "In[505]:=",ExpressionUUID->"7027a292-97fc-4674-9fcf-00f9b2c60ed1"],
+  "In[380]:=",ExpressionUUID->"7027a292-97fc-4674-9fcf-00f9b2c60ed1"],
 
 Cell[CellGroupData[{
 
@@ -701,7 +705,7 @@ Cell[BoxData[
     StripOnInput->False,
     FontSize->25], "\[InvisibleSpace]", 
    StyleBox[
-    RowBox[{"-", "0.6138015073823201`"}],
+    RowBox[{"-", "0.5710692305995735`"}],
     StripOnInput->False,
     FontSize->25], "\[InvisibleSpace]", 
    StyleBox["\<\"\[Epsilon] which has a relative error of \"\>",
@@ -710,9 +714,9 @@ Cell[BoxData[
    StyleBox[
     TagBox[
      InterpretationBox[
-      StyleBox["\<\"-0.3\"\>",
+      StyleBox["\<\"-7.3\"\>",
        ShowStringCharacters->False],
-      -0.31949763058711056`,
+      -7.25915933858583,
       AutoDelete->True],
      NumberForm[#, {5, 1}]& ],
     StripOnInput->False,
@@ -722,18 +726,19 @@ Cell[BoxData[
     FontSize->25]}],
   SequenceForm[
    Style["The 1-Qubit data had an expectation value of ", FontSize -> 25], 
-   Style[-0.6138015073823201, FontSize -> 25], 
+   Style[-0.5710692305995735, FontSize -> 25], 
    Style["\[Epsilon] which has a relative error of ", FontSize -> 25], 
    Style[
-    NumberForm[-0.31949763058711056`, {5, 1}], FontSize -> 25], 
+    NumberForm[-7.25915933858583, {5, 1}], FontSize -> 25], 
    Style["%.", FontSize -> 25]],
   Editable->False]], "Print",
  CellChangeTimes->{
   3.852029612589341*^9, {3.8520296957478228`*^9, 3.852029716452311*^9}, {
-   3.852029756133318*^9, 3.85202980179107*^9}, 3.852030469549593*^9},
+   3.852029756133318*^9, 3.85202980179107*^9}, 3.852030469549593*^9, 
+   3.852123156880692*^9, 3.852123564705112*^9},
  CellLabel->
   "During evaluation of \
-In[505]:=",ExpressionUUID->"82fc8dd0-2728-4152-bf33-224a00cf93d9"],
+In[380]:=",ExpressionUUID->"9f90bf37-3c47-4339-83c2-10e90c74b695"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -742,7 +747,7 @@ Cell[BoxData[
     StripOnInput->False,
     FontSize->25], "\[InvisibleSpace]", 
    StyleBox[
-    RowBox[{"-", "1.4812063156951443`"}],
+    RowBox[{"-", "1.449174949876295`"}],
     StripOnInput->False,
     FontSize->25], "\[InvisibleSpace]", 
    StyleBox["\<\"\[Epsilon] which has a relative error of \"\>",
@@ -751,9 +756,9 @@ Cell[BoxData[
    StyleBox[
     TagBox[
      InterpretationBox[
-      StyleBox["\<\"-8.4\"\>",
+      StyleBox["\<\"-10.3\"\>",
        ShowStringCharacters->False],
-      -8.363880711481308,
+      -10.345529066641559`,
       AutoDelete->True],
      NumberForm[#, {5, 1}]& ],
     StripOnInput->False,
@@ -763,18 +768,19 @@ Cell[BoxData[
     FontSize->25]}],
   SequenceForm[
    Style["The 2-Qubit data had an expectation value of ", FontSize -> 25], 
-   Style[-1.4812063156951443`, FontSize -> 25], 
+   Style[-1.449174949876295, FontSize -> 25], 
    Style["\[Epsilon] which has a relative error of ", FontSize -> 25], 
    Style[
-    NumberForm[-8.363880711481308, {5, 1}], FontSize -> 25], 
+    NumberForm[-10.345529066641559`, {5, 1}], FontSize -> 25], 
    Style["%.", FontSize -> 25]],
   Editable->False]], "Print",
  CellChangeTimes->{
   3.852029612589341*^9, {3.8520296957478228`*^9, 3.852029716452311*^9}, {
-   3.852029756133318*^9, 3.85202980179107*^9}, 3.852030469552101*^9},
+   3.852029756133318*^9, 3.85202980179107*^9}, 3.852030469549593*^9, 
+   3.852123156880692*^9, 3.852123564707218*^9},
  CellLabel->
   "During evaluation of \
-In[505]:=",ExpressionUUID->"bbfe762e-e9af-4131-8bee-3158a2b9a7a9"],
+In[380]:=",ExpressionUUID->"5fd97ebe-f6ef-4522-969a-00fa57eae15c"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -783,7 +789,7 @@ Cell[BoxData[
     StripOnInput->False,
     FontSize->25], "\[InvisibleSpace]", 
    StyleBox[
-    RowBox[{"-", "2.2004052023101006`"}],
+    RowBox[{"-", "2.1526139023012023`"}],
     StripOnInput->False,
     FontSize->25], "\[InvisibleSpace]", 
    StyleBox["\<\"\[Epsilon] which has a relative error of \"\>",
@@ -792,9 +798,9 @@ Cell[BoxData[
    StyleBox[
     TagBox[
      InterpretationBox[
-      StyleBox["\<\"-16.3\"\>",
+      StyleBox["\<\"-18.1\"\>",
        ShowStringCharacters->False],
-      -16.29028201442641,
+      -18.108399987292856`,
       AutoDelete->True],
      NumberForm[#, {5, 1}]& ],
     StripOnInput->False,
@@ -804,27 +810,27 @@ Cell[BoxData[
     FontSize->25]}],
   SequenceForm[
    Style["The 3-Qubit data had an expectation value of ", FontSize -> 25], 
-   Style[-2.2004052023101006`, FontSize -> 25], 
+   Style[-2.1526139023012023`, FontSize -> 25], 
    Style["\[Epsilon] which has a relative error of ", FontSize -> 25], 
    Style[
-    NumberForm[-16.29028201442641, {5, 1}], FontSize -> 25], 
+    NumberForm[-18.108399987292856`, {5, 1}], FontSize -> 25], 
    Style["%.", FontSize -> 25]],
   Editable->False]], "Print",
  CellChangeTimes->{
   3.852029612589341*^9, {3.8520296957478228`*^9, 3.852029716452311*^9}, {
-   3.852029756133318*^9, 3.85202980179107*^9}, 3.852030469553426*^9},
+   3.852029756133318*^9, 3.85202980179107*^9}, 3.852030469549593*^9, 
+   3.852123156880692*^9, 3.852123564709491*^9},
  CellLabel->
   "During evaluation of \
-In[505]:=",ExpressionUUID->"f02541e2-1a01-4a92-97c2-51dfcd67c389"]
+In[380]:=",ExpressionUUID->"3230b4b2-7ac6-4678-bbd7-6b5d8ed39d12"]
 }, Open  ]],
 
 Cell[BoxData[
  GraphicsBox[{{}, {{}, {}, 
     {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.012833333333333334`],
       AbsoluteThickness[1.6], 
-     LineBox[{{-1.5, 0.73046875}, {-1., 0.}, {-0.5, 0.}, {0., 0.}, {0.5, 
-      0.24609375}, {1., 0.}, {1.5, 0.}, {2., 0.}, {2.5, 
-      0.0234375}}]}}, {{}, {}}},
+     LineBox[{{-1.5, 0.7045}, {-1., 0.}, {-0.5, 0.}, {0., 0.}, {0.5, 
+      0.2702}, {1., 0.}, {1.5, 0.}, {2., 0.}, {2.5, 0.0253}}]}}, {{}, {}}},
   AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
   Axes->{True, True},
   AxesLabel->{
@@ -860,7 +866,7 @@ Cell[BoxData[
     StyleBox[
     "\"1-Qubit LMG \[LeftAngleBracket]H\[RightAngleBracket] Estimates\"", 
      FontSize -> 25, StripOnInput -> False], TraditionalForm],
-  PlotRange->{{-1.5, 2.5}, {0, 0.73046875}},
+  PlotRange->{{-1.5, 2.5}, {0, 0.7045}},
   PlotRangeClipping->True,
   PlotRangePadding->{{
      Scaled[0.02], 
@@ -876,19 +882,19 @@ Cell[BoxData[
    3.852029188432682*^9, 3.852029203305828*^9}, {3.852029235023405*^9, 
    3.852029242950612*^9}, 3.852029343765148*^9, 3.852029612621873*^9, {
    3.852029695771638*^9, 3.85202971648778*^9}, {3.8520297561534224`*^9, 
-   3.852029801818596*^9}, 3.852030469585528*^9},
+   3.852029801818596*^9}, 3.852030469585528*^9, 3.852123156986401*^9, 
+   3.852123564776539*^9},
  CellLabel->
-  "Out[508]=",ExpressionUUID->"f3e1a9ff-225c-4a9c-85c2-62022d7474c5"],
+  "Out[386]=",ExpressionUUID->"80d6c32a-dc2d-462a-b553-a599a667e1a0"],
 
 Cell[BoxData[
  GraphicsBox[{{}, {{}, {}, 
     {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.012833333333333334`],
       AbsoluteThickness[1.6], 
-     LineBox[{{-3.5, 0.1328125}, {-3., 0.1796875}, {-2.5, 0.08203125}, {-2., 
-      0.16015625}, {-1.5, 0.15234375}, {-1., 0.05859375}, {-0.5, 0.046875}, {
-      0., 0.07421875}, {0.5, 0.02734375}, {1., 0.015625}, {1.5, 0.015625}, {
-      2., 0.03515625}, {2.5, 0.00390625}, {3., 0.00390625}, {3.5, 0.}, {4., 
-      0.01171875}}]}}, {{}, {}}},
+     LineBox[{{-3.5, 0.1472}, {-3., 0.1588}, {-2.5, 0.0515}, {-2., 
+      0.1616}, {-1.5, 0.174}, {-1., 0.0646}, {-0.5, 0.0506}, {0., 0.0761}, {
+      0.5, 0.0413}, {1., 0.0105}, {1.5, 0.019}, {2., 0.0201}, {2.5, 0.0083}, {
+      3., 0.0061}, {3.5, 0.0078}, {4., 0.0022}, {4.5, 0.0003}}]}}, {{}, {}}},
   AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
   Axes->{True, True},
   AxesLabel->{
@@ -924,7 +930,7 @@ Cell[BoxData[
     StyleBox[
     "\"2-Qubit LMG \[LeftAngleBracket]H\[RightAngleBracket] Estimates\"", 
      FontSize -> 25, StripOnInput -> False], TraditionalForm],
-  PlotRange->{{-3.5, 4.}, {0, 0.1796875}},
+  PlotRange->{{-3.5, 4.5}, {0, 0.174}},
   PlotRangeClipping->True,
   PlotRangePadding->{{
      Scaled[0.02], 
@@ -940,18 +946,23 @@ Cell[BoxData[
    3.852029188432682*^9, 3.852029203305828*^9}, {3.852029235023405*^9, 
    3.852029242950612*^9}, 3.852029343765148*^9, 3.852029612621873*^9, {
    3.852029695771638*^9, 3.85202971648778*^9}, {3.8520297561534224`*^9, 
-   3.852029801818596*^9}, 3.85203046960986*^9},
+   3.852029801818596*^9}, 3.852030469585528*^9, 3.852123156986401*^9, 
+   3.852123564832384*^9},
  CellLabel->
-  "Out[509]=",ExpressionUUID->"d1fa29c3-ffc3-4f6f-a4e4-f8f47fe55de3"],
+  "Out[387]=",ExpressionUUID->"a2cf8c27-f0de-441f-8a32-a7ec6bbad5f4"],
 
 Cell[BoxData[
  GraphicsBox[{{}, {{}, {}, 
     {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.012833333333333334`],
       AbsoluteThickness[1.6], LineBox[CompressedData["
-1:eJxTTMoPSmViYGCQAWIQDQFSByD0AnsILYHGF4Py50D5IlD+DihfCMpfAuUL
-QPl7oXweKH83lM8B5a+D8lmg/G1QPgOa/I/9qPZ9gPK3QvkP9qO6DwZmwOTt
-Ufkf7FHV/4DSE2D6HSDUFJj7oPwCmPvR+DwOqPYKQPkdsPBBUy8C5TfAwheN
-L4FmnhQaXwZuHgCWaysG
+1:eJxTTMoPSmViYGCQB2IQDQFSB4q6+p58kp9kD+FLHPj4xSuyzWIalC92QE4s
+y/dz32IoX+TAjQ8gBTugfKEDS/0chBMPw+QFDjxNXHjN5D1MnudA56V7D7gn
+74TyOQ6wLp5kxei7BcpnOfDi5ppfMblboXyGA+ZSB6IVHDdC+T/2h9Wu25ZU
+D9P/Yb8xGGyG8h/s532gO2HBj4Uw/Qwyrx+ZSR2YDZO3v5Qfz35OciJMv33L
+vLOrzl+F+e+H/dfb1xuL3abA9DsET1PsKy3shrnPIW8x4x5WoRaY+x2qRda5
+P6yC8XkcFqZvflW8tRXmf4eyQmmgkxpg4QNVXwILPwd9sIFFsPB1+FWXtadk
+cgQs/KHyQVC+lEOiUaiB1kpjKF/G4c/Kj5d8kxygfDkHXWewj6F8BQcGFKAI
+lwcAuKWFHQ==
       "]]}}, {{}, {}}},
   AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
   Axes->{True, True},
@@ -988,7 +999,7 @@ L4FmnhQaXwZuHgCWaysG
     StyleBox[
     "\"3-Qubit LMG \[LeftAngleBracket]H\[RightAngleBracket] Estimates\"", 
      FontSize -> 25, StripOnInput -> False], TraditionalForm],
-  PlotRange->{{-6.5, 7.}, {0, 0.11328125}},
+  PlotRange->{{-6.5, 8.5}, {0, 0.0999}},
   PlotRangeClipping->True,
   PlotRangePadding->{{
      Scaled[0.02], 
@@ -1004,16 +1015,17 @@ L4FmnhQaXwZuHgCWaysG
    3.852029188432682*^9, 3.852029203305828*^9}, {3.852029235023405*^9, 
    3.852029242950612*^9}, 3.852029343765148*^9, 3.852029612621873*^9, {
    3.852029695771638*^9, 3.85202971648778*^9}, {3.8520297561534224`*^9, 
-   3.852029801818596*^9}, 3.85203046963967*^9},
+   3.852029801818596*^9}, 3.852030469585528*^9, 3.852123156986401*^9, 
+   3.852123564890551*^9},
  CellLabel->
-  "Out[510]=",ExpressionUUID->"1a5f1280-ee5d-4a4e-b25c-92fa57e25200"],
+  "Out[388]=",ExpressionUUID->"128dafeb-9a23-49fd-9bc0-0f09ba9e90cc"],
 
 Cell[BoxData[
  GraphicsBox[{{}, {{}, {}, 
     {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.012833333333333334`],
       AbsoluteThickness[1.6], 
-     LineBox[{{1., 0.0031949763058711058`}, {2., 0.08363880711481307}, {
-      2.837217172697653, 0.15}}]}}, {{}, {}}},
+     LineBox[{{1., 0.0725915933858583}, {2., 0.1034552906664156}, {
+      2.5995811318949427`, 0.15}}]}}, {{}, {}}},
   AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
   Axes->{True, True},
   AxesLabel->{
@@ -1048,7 +1060,7 @@ Cell[BoxData[
     StyleBox[
     "\"LMG \[LeftAngleBracket]H\[RightAngleBracket] Estimates By Qubit \
 Count\"", FontSize -> 25, StripOnInput -> False], TraditionalForm],
-  PlotRange->{{0, 3}, {0, 0.15}},
+  PlotRange->{{0., 3.}, {0., 0.15}},
   PlotRangeClipping->True,
   PlotRangePadding->{{0, 0}, {0, 0}},
   Ticks->{Automatic, Automatic}]], "Output",
@@ -1060,9 +1072,10 @@ Count\"", FontSize -> 25, StripOnInput -> False], TraditionalForm],
    3.852029188432682*^9, 3.852029203305828*^9}, {3.852029235023405*^9, 
    3.852029242950612*^9}, 3.852029343765148*^9, 3.852029612621873*^9, {
    3.852029695771638*^9, 3.85202971648778*^9}, {3.8520297561534224`*^9, 
-   3.852029801818596*^9}, 3.852030469670218*^9},
+   3.852029801818596*^9}, 3.852030469585528*^9, 3.852123156986401*^9, 
+   3.852123564949548*^9},
  CellLabel->
-  "Out[511]=",ExpressionUUID->"0a1088fc-08af-4ebb-a826-50954aedab69"]
+  "Out[389]=",ExpressionUUID->"96f7b090-57c5-4520-abdf-2d6909debaea"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -4814,11 +4827,12 @@ Cell[BoxData[
   3.847881589240901*^9, 3.847881590182107*^9}, {3.847881783394623*^9, 
   3.8478817838919*^9}, {3.849175139575777*^9, 3.8491751993949203`*^9}},
  CellTags->"runfirst",
- CellLabel->"In[61]:=",ExpressionUUID->"b83b1c51-17f3-4257-a51a-c87cd9df490c"]
+ CellLabel->
+  "In[255]:=",ExpressionUUID->"b83b1c51-17f3-4257-a51a-c87cd9df490c"]
 },
-WindowSize->{808, 681},
+WindowSize->{Full, Full},
 WindowMargins->{{150, Automatic}, {Automatic, 0}},
-FrontEndVersion->"12.1 for Mac OS X x86 (64-bit) (June 19, 2020)",
+FrontEndVersion->"13.0 for Mac OS X x86 (64-bit) (December 2, 2021)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"62f1d4a9-5a4a-4ab9-b81e-573203d25aa4"
 ]
@@ -4828,33 +4842,33 @@ ExpressionUUID->"62f1d4a9-5a4a-4ab9-b81e-573203d25aa4"
 (*CellTagsOutline
 CellTagsIndex->{
  "runfirst"->{
-  Cell[41427, 1067, 139449, 3749, 9085, "Input",ExpressionUUID->"b83b1c51-17f3-4257-a51a-c87cd9df490c",
+  Cell[42050, 1080, 139453, 3750, 4399, "Input",ExpressionUUID->"b83b1c51-17f3-4257-a51a-c87cd9df490c",
    CellTags->"runfirst"]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"runfirst", 181223, 4829}
+ {"runfirst", 181855, 4843}
  }
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 1815, 37, 363, "Text",ExpressionUUID->"cae858d2-540d-4608-8d21-c3f0aeb362fc"],
-Cell[2376, 59, 719, 13, 123, "Text",ExpressionUUID->"6da49c1c-df50-4d22-8483-42ac4fc22049"],
-Cell[3098, 74, 14585, 373, 1383, "Input",ExpressionUUID->"084df1b7-e6b3-4160-9f31-0113e7ea164e"],
+Cell[558, 20, 1815, 37, 222, "Text",ExpressionUUID->"cae858d2-540d-4608-8d21-c3f0aeb362fc"],
+Cell[2376, 59, 719, 13, 100, "Text",ExpressionUUID->"6da49c1c-df50-4d22-8483-42ac4fc22049"],
+Cell[3098, 74, 14711, 375, 777, "Input",ExpressionUUID->"084df1b7-e6b3-4160-9f31-0113e7ea164e"],
 Cell[CellGroupData[{
-Cell[17708, 451, 9433, 241, 949, "Input",ExpressionUUID->"7027a292-97fc-4674-9fcf-00f9b2c60ed1"],
+Cell[17834, 453, 9428, 243, 370, "Input",ExpressionUUID->"7027a292-97fc-4674-9fcf-00f9b2c60ed1"],
 Cell[CellGroupData[{
-Cell[27166, 696, 1391, 39, 87, "Print",ExpressionUUID->"82fc8dd0-2728-4152-bf33-224a00cf93d9"],
-Cell[28560, 737, 1386, 39, 87, "Print",ExpressionUUID->"bbfe762e-e9af-4131-8bee-3158a2b9a7a9"],
-Cell[29949, 778, 1387, 39, 87, "Print",ExpressionUUID->"f02541e2-1a01-4a92-97c2-51dfcd67c389"]
+Cell[27287, 700, 1431, 40, 33, "Print",ExpressionUUID->"9f90bf37-3c47-4339-83c2-10e90c74b695"],
+Cell[28721, 742, 1436, 40, 33, "Print",ExpressionUUID->"5fd97ebe-f6ef-4522-969a-00fa57eae15c"],
+Cell[30160, 784, 1439, 40, 33, "Print",ExpressionUUID->"3230b4b2-7ac6-4678-bbd7-6b5d8ed39d12"]
 }, Open  ]],
-Cell[31351, 820, 2489, 60, 345, "Output",ExpressionUUID->"f3e1a9ff-225c-4a9c-85c2-62022d7474c5"],
-Cell[33843, 882, 2666, 62, 345, "Output",ExpressionUUID->"d1fa29c3-ffc3-4f6f-a4e4-f8f47fe55de3"],
-Cell[36512, 946, 2577, 62, 345, "Output",ExpressionUUID->"1a5f1280-ee5d-4a4e-b25c-92fa57e25200"],
-Cell[39092, 1010, 2320, 54, 326, "Output",ExpressionUUID->"0a1088fc-08af-4ebb-a826-50954aedab69"]
+Cell[31614, 827, 2515, 60, 345, "Output",ExpressionUUID->"80d6c32a-dc2d-462a-b553-a599a667e1a0"],
+Cell[34132, 889, 2670, 62, 368, "Output",ExpressionUUID->"a2cf8c27-f0de-441f-8a32-a7ec6bbad5f4"],
+Cell[36805, 953, 2859, 67, 345, "Output",ExpressionUUID->"128dafeb-9a23-49fd-9bc0-0f09ba9e90cc"],
+Cell[39667, 1022, 2368, 55, 326, "Output",ExpressionUUID->"96f7b090-57c5-4520-abdf-2d6909debaea"]
 }, Open  ]],
-Cell[41427, 1067, 139449, 3749, 9085, "Input",ExpressionUUID->"b83b1c51-17f3-4257-a51a-c87cd9df490c",
+Cell[42050, 1080, 139453, 3750, 4399, "Input",ExpressionUUID->"b83b1c51-17f3-4257-a51a-c87cd9df490c",
  CellTags->"runfirst"]
 }
 ]
