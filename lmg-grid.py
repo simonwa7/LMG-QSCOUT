@@ -9,18 +9,33 @@ from measurement import (
 
 
 NUMBER_OF_QUBITS = 3
-NUMBER_OF_SAMPLES = 2**13
+NUMBER_OF_SAMPLES = 2 ** 13
 PARAMETERS_MAP = {1: M1_GRID_PARAMETERS, 2: M2_GRID_PARAMETERS, 3: M3_GRID_PARAMETERS}
-RESULTS_DIR_NAME = "results/jaqalpaq/grid/{}/".format(NUMBER_OF_QUBITS)
+RESULTS_DIR_NAME = "results/jaqalpaq/grid/ionsim/{}/".format(NUMBER_OF_QUBITS)
 
 import os
+
 if not os.path.exists(RESULTS_DIR_NAME):
     os.makedirs(RESULTS_DIR_NAME)
 
-from qscout.v1 import noisy
-# Replace this noise model with interpygate noise model
-backend = noisy.SNLToy1(NUMBER_OF_QUBITS)
+import jaqalpaq
+
+from qscout.v1.std.ionsim import IonSimErrorModel
+
+import jaqalpaq.core.result
+
+jaqalpaq.core.result.ProbabilisticSubcircuit.CUTOFF_FAIL = 1e-4
+jaqalpaq.core.result.ProbabilisticSubcircuit.CUTOFF_WARN = 1e-4
+
 # backend=None
+# backend = noisy.SNLToy1(NUMBER_OF_QUBITS)
+backend = IonSimErrorModel(
+    NUMBER_OF_QUBITS,
+    model="standard",
+    params=["dpower12", "dfreq1", "dphase1", "dtime"],
+    v0={"dpower12": 5e-4, "dfreq1": 5e3, "dphase1": 5e-2, "dtime": 5e-3},
+    sigmas={"dpower12": 5e-4, "dfreq1": 5e3, "dphase1": 5e-2, "dtime": 5e-3},
+)
 
 
 for i, circuit_parameters in enumerate(PARAMETERS_MAP[NUMBER_OF_QUBITS]):
