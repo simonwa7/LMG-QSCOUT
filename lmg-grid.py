@@ -8,7 +8,7 @@ from measurement import (
 )
 
 
-NUMBER_OF_QUBITS = 3
+NUMBER_OF_QUBITS = 1
 NUMBER_OF_SAMPLES = 2 ** 13
 PARAMETERS_MAP = {1: M1_GRID_PARAMETERS, 2: M2_GRID_PARAMETERS, 3: M3_GRID_PARAMETERS}
 RESULTS_DIR_NAME = "results/jaqalpaq/grid/ionsim/{}/".format(NUMBER_OF_QUBITS)
@@ -57,7 +57,7 @@ for i, circuit_parameters in enumerate(PARAMETERS_MAP[NUMBER_OF_QUBITS]):
             )
         )
 
-    data_filename = RESULTS_DIR_NAME + "sim{}.txt".format(i + 1)
+    data_filename = RESULTS_DIR_NAME + "{}.txt".format(i + 1)
     with open(data_filename, "w") as f:
         f.write(str(all_measurements))
     f.close()

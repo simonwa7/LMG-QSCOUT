@@ -37,14 +37,14 @@ for NUMBER_OF_QUBITS in [1, 2, 3]:
 
     # Replace this noise model with interpygate noise model
     # backend = noisy.SNLToy1(NUMBER_OF_QUBITS)
-    backend = None
-    # backend = IonSimErrorModel(
-    #     NUMBER_OF_QUBITS,
-    #     model="standard",
-    #     params=["dpower12", "dfreq1", "dphase1", "dtime"],
-    #     v0={"dpower12": 5e-4, "dfreq1": 5e3, "dphase1": 5e-2, "dtime": 5e-3},
-    #     sigmas={"dpower12": 5e-4, "dfreq1": 5e3, "dphase1": 5e-2, "dtime": 5e-3},
-    # )
+    # backend = None
+    backend = IonSimErrorModel(
+        NUMBER_OF_QUBITS,
+        model="standard",
+        params=["dpower12", "dfreq1", "dphase1", "dtime"],
+        v0={"dpower12": 5e-4, "dfreq1": 5e3, "dphase1": 5e-2, "dtime": 5e-3},
+        sigmas={"dpower12": 5e-4, "dfreq1": 5e3, "dphase1": 5e-2, "dtime": 5e-3},
+    )
 
     cliques_to_measure = [create_clique1_circuit, create_clique2_circuit]
     if NUMBER_OF_QUBITS > 1:
