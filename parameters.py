@@ -1,5 +1,3 @@
-import numpy as np
-
 M1_GRID_PARAMETERS = [
     [-2.42787],
     [-2.16607],
