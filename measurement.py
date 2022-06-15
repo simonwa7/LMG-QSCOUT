@@ -20,13 +20,27 @@ def get_batched_probabilities_for_clique_on_simulator(
     circuit_generator,
     circuit_parameters_list,
     number_of_qubits,
+    post_selection=False,
     **jaqal_emulator_kwargs
 ):
     all_probabilities = []
     for circuit_parameters in circuit_parameters_list:
-        circuit = circuit_generator(circuit_parameters, number_of_qubits)
+        circuit, junk_state_indices = circuit_generator(
+            circuit_parameters, number_of_qubits
+        )
+
         sim_result = jql.emulator.run_jaqal_circuit(circuit, **jaqal_emulator_kwargs)
-        all_probabilities.append(list(sim_result.subcircuits[0].probability_by_int))
+        probability_distribution = sim_result.subcircuits[0].probability_by_int
+
+        if post_selection:
+            print(probability_distribution, sum(probability_distribution))
+            for junk_state_index in junk_state_indices:
+                probability_distribution[junk_state_index] = 0.00000001
+            probability_distribution /= np.linalg.norm(probability_distribution, ord=1)
+            print(probability_distribution, sum(probability_distribution))
+
+        all_probabilities.append(list(probability_distribution))
+
     return all_probabilities
 
 
@@ -98,8 +112,9 @@ def get_batched_probabilities_for_clique_on_hardware(
     )
 
     # Run code on device and record probabilities of measurement outcomes indexed by parameter values
-    return [list(np.random.uniform(size=len(circuit_parameters_list)))]
+    # return [list(np.random.uniform(size=len(circuit_parameters_list)))]
 
-
-#     return [experiment.subcircuits[0].probability_by_int
-#             for experiment in jql.run.run_jaqal_batch(circuit_code, batch_dictionary)]
+    return [
+        experiment.subcircuits[0].probability_by_int
+        for experiment in jql.run.run_jaqal_batch(circuit_code, batch_dictionary)
+    ]

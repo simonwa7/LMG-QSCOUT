@@ -67,7 +67,7 @@ def _add_hadamard_gate(circuit_builder, qubit):
 
 
 def create_clique1_circuit(circuit_parameters, number_of_qubits):
-    """Constructs the ansatz circuit used to measure clique 1"""
+    """Constructs the ansatz circuit used to measure clique 1 (All Z-basis)"""
     builder = jql.core.circuitbuilder.CircuitBuilder(native_gates=ALL_GATES)
 
     builder, _ = _prepare_state(
@@ -76,11 +76,20 @@ def create_clique1_circuit(circuit_parameters, number_of_qubits):
         builder,
     )
     builder.gate("measure_all")
-    return builder.build()
+
+    junk_state_indices = []
+    if number_of_qubits == 1:
+        junk_state_indices = []
+    elif number_of_qubits == 2:
+        junk_state_indices = [2]
+    elif number_of_qubits == 3:
+        junk_state_indices = [2, 4, 5, 6]
+
+    return builder.build(), junk_state_indices
 
 
 def create_clique2_circuit(circuit_parameters, number_of_qubits):
-    """Constructs the ansatz circuit used to measure clique 2"""
+    """Constructs the ansatz circuit used to measure clique 2 (All X-basis)"""
     builder = jql.core.circuitbuilder.CircuitBuilder(native_gates=ALL_GATES)
 
     builder, qubits = _prepare_state(
@@ -93,7 +102,7 @@ def create_clique2_circuit(circuit_parameters, number_of_qubits):
     for i in range(number_of_qubits):
         builder = _add_hadamard_gate(builder, qubits[i])
     builder.gate("measure_all")
-    return builder.build()
+    return builder.build(), []
 
 
 def create_clique3_circuit(circuit_parameters, number_of_qubits):
@@ -112,7 +121,7 @@ def create_clique3_circuit(circuit_parameters, number_of_qubits):
     builder = _add_hadamard_gate(builder, qubits[0])
 
     builder.gate("measure_all")
-    return builder.build()
+    return builder.build(), []
 
 
 def create_clique4_circuit(circuit_parameters, number_of_qubits):
@@ -131,4 +140,4 @@ def create_clique4_circuit(circuit_parameters, number_of_qubits):
     builder = _add_hadamard_gate(builder, qubits[1])
 
     builder.gate("measure_all")
-    return builder.build()
+    return builder.build(), []
