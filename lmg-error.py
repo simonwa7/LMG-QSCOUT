@@ -2,6 +2,8 @@ from parameters import (
     M1_POINT_PARAMETER_VALUES,
     M2_POINT_PARAMETER_VALUES,
     M3_POINT_PARAMETER_VALUES,
+    M4_POINT_PARAMETER_VALUES,
+    M5_POINT_PARAMETER_VALUES,
 )
 from ansatz import (
     create_clique1_circuit,
@@ -22,14 +24,20 @@ import jaqalpaq.core.result
 jaqalpaq.core.result.ProbabilisticSubcircuit.CUTOFF_FAIL = 1e-4
 jaqalpaq.core.result.ProbabilisticSubcircuit.CUTOFF_WARN = 1e-4
 NUMBER_OF_SAMPLES = 10000
-RESULTS_DIR_NAME = "results/point/ionsim_4_1_22/"
+RESULTS_DIR_NAME = "results/point/test/"
 
 if not os.path.exists(RESULTS_DIR_NAME):
     os.makedirs(RESULTS_DIR_NAME)
 
 for number_of_qubits, circuit_parameters in zip(
-    [1, 2, 3],
-    [M1_POINT_PARAMETER_VALUES, M2_POINT_PARAMETER_VALUES, M3_POINT_PARAMETER_VALUES],
+    [1, 2, 3, 4, 5],
+    [
+        M1_POINT_PARAMETER_VALUES,
+        M2_POINT_PARAMETER_VALUES,
+        M3_POINT_PARAMETER_VALUES,
+        M4_POINT_PARAMETER_VALUES,
+        M5_POINT_PARAMETER_VALUES,
+    ],
 ):
     # Choose noise model
     # backend = None
