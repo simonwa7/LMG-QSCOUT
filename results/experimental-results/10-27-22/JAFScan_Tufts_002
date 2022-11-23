@@ -1,0 +1,166 @@
+# <?xml version="1.0" ?>
+# <DataFileHeader>
+#   <Variables>
+#     <Element name="PulseProgram" type="dict">
+#       <Element name="PulseProgram" type="str">D:/Users/Public/Documents/experiments/qscout_1-1/config/PulseProgramsPlus/QSCOUT_RFSoC_Basic.ppp</Element>
+#       <Element name="RAMStartAddress" type="int">0</Element>
+#       <Element name="CoolingFreq" type="Quantity">222.80331936987142 MHz</Element>
+#       <Element name="PumpingFreq" type="Quantity">228.30331936987142 MHz</Element>
+#       <Element name="DetectFreq" type="Quantity">228.30331936987142 MHz</Element>
+#       <Element name="CoolLockSetPoint" type="Quantity">0.4 V</Element>
+#       <Element name="DetectLockSetPoint" type="Quantity">0.3 V</Element>
+#       <Element name="Static370LockSetPoint" type="Quantity">0.4 V</Element>
+#       <Element name="MS_Delta" type="int">0</Element>
+#       <Element name="SB_Freq" type="Quantity">0 kHz</Element>
+#       <Element name="MaxCoolingRepeat" type="Quantity">25000</Element>
+#       <Element name="InFibers" type="Quantity">1</Element>
+#       <Element name="NIons" type="Quantity">3</Element>
+#       <Element name="PresenceThreshold" type="Quantity">67.5</Element>
+#       <Element name="FiberPresenceThreshold" type="Quantity">15.0</Element>
+#       <Element name="CoolingTime" type="Quantity">1.5 ms</Element>
+#       <Element name="PumpTime" type="Quantity">30 탎</Element>
+#       <Element name="DetectTime" type="Quantity">400 탎</Element>
+#       <Element name="experiments" type="Quantity">5000</Element>
+#       <Element name="DoRFSoC" type="int">1</Element>
+#       <Element name="Do355SidebandCool" type="Quantity">1</Element>
+#       <Element name="EOMDelay" type="Quantity">1.2 탎</Element>
+#       <Element name="RFSoCDelay" type="int">0</Element>
+#       <Element name="DoTickle" type="int">0</Element>
+#       <Element name="TickleFreq" type="float">0.0</Element>
+#       <Element name="Tickle_Offset" type="int">0</Element>
+#       <Element name="Tickle_Amp" type="int">0</Element>
+#       <Element name="Servo370Time" type="int">0</Element>
+#       <Element name="TensorScaling" type="int">1</Element>
+#       <Element name="PulseDuration" type="Quantity">18.240566705218786 탎</Element>
+#       <Element name="AmpOverride" type="int">-1</Element>
+#       <Element name="coolSendMask" type="int">18446744073709551615</Element>
+#       <Element name="j.pd.pulse_duration" type="Quantity">-1 탎</Element>
+#       <Element name="j.__global_delay__" type="Quantity">-1.35 탎</Element>
+#       <Element name="j.__repeats__" type="Quantity">5000</Element>
+#       <Element name="j.pd.microwave_frequency" type="Quantity">42.81677482938523 MHz</Element>
+#       <Element name="j.pd.pump_time" type="Quantity">2 탎</Element>
+#       <Element name="j.pd.pump_freq" type="Quantity">85 MHz</Element>
+#       <Element name="j.pd.pump_amp" type="Quantity">200</Element>
+#       <Element name="j.pd.global_center_frequency" type="Quantity">200 MHz</Element>
+#       <Element name="j.pd.ia_center_frequency" type="Quantity">230 MHz</Element>
+#       <Element name="j.pd.adjusted_carrier_splitting" type="Quantity">29.691774829385395 MHz</Element>
+#       <Element name="j.pd.principal_axis_rotation" type="Quantity">45</Element>
+#       <Element name="j.pd.higher_motional_mode_frequencies" type="Quantity">[2.17442713,2.10229334,2.0011059 ] MHz</Element>
+#       <Element name="j.pd.lower_motional_mode_frequencies" type="Quantity">[1.91487089,1.83273987,1.71478855] MHz</Element>
+#       <Element name="j.pd.co_ia_resonant_pi_time" type="Quantity">18.240566705218786 탎</Element>
+#       <Element name="j.pd.counter_resonant_pi_time" type="Quantity">19.422989556017303 탎</Element>
+#       <Element name="j.pd.amp0_coprop_list" type="Quantity">[ 0.,35.,30.,30., 0., 0., 0., 0.] </Element>
+#       <Element name="j.pd.amp1_coprop_list" type="Quantity">[ 0.        ,56.78374996,59.        ,72.69685674, 0.        , 0.        ,
+#   0.        , 0.        ] </Element>
+#       <Element name="j.pd.amp0_counterprop" type="Quantity">100</Element>
+#       <Element name="j.pd.amp1_counterprop_list" type="Quantity">[ 0.        ,11.83784631,11.        ,11.73370442, 0.        , 0.        ,
+#   0.        , 0.        ] </Element>
+#       <Element name="j.pd.MS_pulse_duration" type="Quantity">250 탎</Element>
+#       <Element name="j.pd.MS_delta" type="Quantity">[-19.91480791, -9.37382455,-20.08025612] kHz</Element>
+#       <Element name="j.pd.MS_framerot" type="Quantity">-9.773221665487405</Element>
+#       <Element name="j.pd.MS_red_amp_list" type="Quantity">[ 0.        ,58.86720458,65.        ,65.23577682, 0.        , 0.        ,
+#   0.        , 0.        ] </Element>
+#       <Element name="j.pd.MS_blue_amp_list" type="Quantity">[ 0.        ,66.08185269,75.33400573,70.49170894, 0.        , 0.        ,
+#   0.        , 0.        ] </Element>
+#       <Element name="j.pd.num_qubits" type="Quantity">3</Element>
+#       <Element name="j.pd.target0" type="Quantity">2</Element>
+#       <Element name="j.pd.target1" type="Quantity">3</Element>
+#       <Element name="j.pd.wait_time" type="Quantity">0 ms</Element>
+#       <Element name="j.pd.microwave_pi_time" type="Quantity">72.1176091354867 탎</Element>
+#       <Element name="j.pd.amp0_global_SBC" type="Quantity">200</Element>
+#       <Element name="j.pd.amp1_single_SBC" type="Quantity">200</Element>
+#       <Element name="j.pd.sb_cool_gap_time" type="float">1e-06</Element>
+#       <Element name="j.pd.sb_gap_time" type="float">1e-06</Element>
+#       <Element name="j.pd.global_delay" type="float">1e-06</Element>
+#       <Element name="j.pd.n_cool_loops" type="Quantity">100</Element>
+#       <Element name="j.pd.do_sideband_cool1" type="Quantity">1</Element>
+#       <Element name="j.pd.do_sideband_cool2" type="Quantity">1</Element>
+#       <Element name="j.pd.SK1_framerot" type="int">0</Element>
+#       <Element name="j.pd.amp0_coprop_global" type="Quantity">100</Element>
+#       <Element name="j.pd.amp1_coprop_global" type="Quantity">100</Element>
+#       <Element name="j.pd.rsb_higher_mm_pi_times" type="Quantity">[[6.27757618,9.61435968,4.55877469],
+#  [7.10040238,6.11213132,4.16699759],
+#  [4.98662656,5.964596  ,5.42930154]] 탎</Element>
+#       <Element name="j.pd.rsb_lower_mm_pi_times" type="Quantity">[[ 5.48682369, 3.84540249, 7.07157783],
+#  [ 5.88669756, 4.85622737,12.97329733],
+#  [ 4.81119182, 5.33135704,12.97329733]] 탎</Element>
+#       <Element name="j.pd.sb_probe_freq" type="Quantity">0 kHz</Element>
+#       <Element name="j.pd.ms_bluecarrier_ampcorrection" type="float">1.0</Element>
+#       <Element name="j.pd.MS_freqwidth" type="float">300000.0</Element>
+#       <Element name="j.pd.MS_global_amp" type="float">100.0</Element>
+#       <Element name="j.pd.MS_phi" type="Quantity">88.50122021171966</Element>
+#       <Element name="j.pd.co_global_resonant_pi_time" type="float">1e-05</Element>
+#       <Element name="j.pd.microwave_amp0" type="int">200</Element>
+#       <Element name="j.pd.MS_framerot_IA" type="Quantity">1.31</Element>
+#       <Element name="j.pd.target2" type="int">1</Element>
+#       <Element name="j.pd.target3" type="int">7</Element>
+#       <Element name="j.pd.target4" type="int">6</Element>
+#       <Element name="j.pd.Counter_Amp0_M" type="float">2.2010849917603803</Element>
+#       <Element name="j.__index__" type="int">0</Element>
+#       <Element name="j.pd.MS_framerot_cal" type="float">0.0</Element>
+#       <Element name="j.theta0" type="float">3.11251</Element>
+#       <Element name="j.halftheta1" type="int">0</Element>
+#       <Element name="j.nhalftheta1" type="int">0</Element>
+#       <Element name="j.halftheta2" type="int">0</Element>
+#       <Element name="j.nhalftheta2" type="int">0</Element>
+#     </Element>
+#     <Element name="Scan" type="dict">
+#       <Element name="scanParameter" type="str">PulseDuration</Element>
+#       <Element name="scanTarget" type="str">Remote</Element>
+#       <Element name="scantype" type="int">0</Element>
+#       <Element name="scanMode" type="int">5</Element>
+#       <Element name="xUnit" type="str">us</Element>
+#       <Element name="xExpression" type="str"></Element>
+#       <Element name="loadPP" type="bool">True</Element>
+#       <Element name="loadPPName" type="str">JAFScan_Tufts_LMG</Element>
+#       <Element name="parallelInternalScanParameter" type="str">None</Element>
+#     </Element>
+#     <ColumnSpec>timeTickFirst, timeTickLast, x, q1_detect, q1_detect_raw, q1_detect_bottom, q1_detect_top, q1_cool, q1_cool_raw, q1_cool_bottom, q1_cool_top, q0_detect, q0_detect_raw, q0_detect_bottom, q0_detect_top, q0_cool, q0_cool_raw, q0_cool_bottom, q0_cool_top, qn1_detect, qn1_detect_raw, qn1_detect_bottom, qn1_detect_top, qn1_cool, qn1_cool_raw, qn1_cool_bottom, qn1_cool_top, chain_as_int, chain_as_int_raw, chain_as_int_bottom, chain_as_int_top, Elliptical_PD_Detect, Elliptical_PD_Detect_raw, Elliptical_PD_Detect_bottom, Elliptical_PD_Detect_top, Elliptical_PD_Cool, Elliptical_PD_Cool_raw, Elliptical_PD_Cool_bottom, Elliptical_PD_Cool_top, nbright, nbright_raw, nbright_bottom, nbright_top</ColumnSpec>
+#     <Element name="comment" type="str"></Element>
+#     <Element name="lastDataAquired" type="datetime">2022-10-27 18:33:55.196998+00:00</Element>
+#     <Element name="name" type="str"></Element>
+#     <Element name="traceCreation" type="datetime">2022-10-27 18:29:09.824408+00:00</Element>
+#     <Element name="traceFinalized" type="datetime">2022-10-27 18:33:55.776451+00:00</Element>
+#     <TracePlottingList>
+#       <TracePlotting _xColumn="x" _yColumn="q1_detect" _topColumn="q1_detect_top" _bottomColumn="q1_detect_bottom" _heightColumn="height" _filtColumn="None" name="q1_detect" type="0" xAxisUnit="us" xAxisLabel="PulseDuration" yAxisLabel="None" windowName="Scan Data" _rawColumn="q1_detect_raw" fill="True" style="1" _fitFunction="None" properties="&lt;trace.PlottedTrace.PlottedTraceProperties object at 0x0000020A986E9208&gt;">
+#         <PlottedTraceProperties averageSameX="True" combinePoints="0" averageType="0"/>
+#       </TracePlotting>
+#       <TracePlotting _xColumn="x" _yColumn="q1_cool" _topColumn="q1_cool_top" _bottomColumn="q1_cool_bottom" _heightColumn="height" _filtColumn="None" name="q1_cool" type="0" xAxisUnit="us" xAxisLabel="PulseDuration" yAxisLabel="None" windowName="CoolCounts" _rawColumn="q1_cool_raw" fill="True" style="1" _fitFunction="None" properties="&lt;trace.PlottedTrace.PlottedTraceProperties object at 0x0000020AA05CC788&gt;">
+#         <PlottedTraceProperties averageSameX="True" combinePoints="0" averageType="0"/>
+#       </TracePlotting>
+#       <TracePlotting _xColumn="x" _yColumn="q0_detect" _topColumn="q0_detect_top" _bottomColumn="q0_detect_bottom" _heightColumn="height" _filtColumn="None" name="q0_detect" type="0" xAxisUnit="us" xAxisLabel="PulseDuration" yAxisLabel="None" windowName="Scan Data" _rawColumn="q0_detect_raw" fill="True" style="1" _fitFunction="None" properties="&lt;trace.PlottedTrace.PlottedTraceProperties object at 0x0000020AA05CC9C8&gt;">
+#         <PlottedTraceProperties averageSameX="True" combinePoints="0" averageType="0"/>
+#       </TracePlotting>
+#       <TracePlotting _xColumn="x" _yColumn="q0_cool" _topColumn="q0_cool_top" _bottomColumn="q0_cool_bottom" _heightColumn="height" _filtColumn="None" name="q0_cool" type="0" xAxisUnit="us" xAxisLabel="PulseDuration" yAxisLabel="None" windowName="CoolCounts" _rawColumn="q0_cool_raw" fill="True" style="1" _fitFunction="None" properties="&lt;trace.PlottedTrace.PlottedTraceProperties object at 0x0000020AA05CCD48&gt;">
+#         <PlottedTraceProperties averageSameX="True" combinePoints="0" averageType="0"/>
+#       </TracePlotting>
+#       <TracePlotting _xColumn="x" _yColumn="qn1_detect" _topColumn="qn1_detect_top" _bottomColumn="qn1_detect_bottom" _heightColumn="height" _filtColumn="None" name="qn1_detect" type="0" xAxisUnit="us" xAxisLabel="PulseDuration" yAxisLabel="None" windowName="Scan Data" _rawColumn="qn1_detect_raw" fill="True" style="1" _fitFunction="None" properties="&lt;trace.PlottedTrace.PlottedTraceProperties object at 0x0000020AA05CC2C8&gt;">
+#         <PlottedTraceProperties averageSameX="True" combinePoints="0" averageType="0"/>
+#       </TracePlotting>
+#       <TracePlotting _xColumn="x" _yColumn="qn1_cool" _topColumn="qn1_cool_top" _bottomColumn="qn1_cool_bottom" _heightColumn="height" _filtColumn="None" name="qn1_cool" type="0" xAxisUnit="us" xAxisLabel="PulseDuration" yAxisLabel="None" windowName="CoolCounts" _rawColumn="qn1_cool_raw" fill="True" style="1" _fitFunction="None" properties="&lt;trace.PlottedTrace.PlottedTraceProperties object at 0x0000020AA0F00608&gt;">
+#         <PlottedTraceProperties averageSameX="True" combinePoints="0" averageType="0"/>
+#       </TracePlotting>
+#       <TracePlotting _xColumn="x" _yColumn="chain_as_int" _topColumn="chain_as_int_top" _bottomColumn="chain_as_int_bottom" _heightColumn="height" _filtColumn="None" name="chain_as_int" type="0" xAxisUnit="us" xAxisLabel="PulseDuration" yAxisLabel="None" windowName="Result Monitor" _rawColumn="chain_as_int_raw" fill="True" style="1" _fitFunction="None" properties="&lt;trace.PlottedTrace.PlottedTraceProperties object at 0x0000020A98B27308&gt;">
+#         <PlottedTraceProperties averageSameX="False" combinePoints="0" averageType="0"/>
+#       </TracePlotting>
+#       <TracePlotting _xColumn="x" _yColumn="Elliptical_PD_Detect" _topColumn="Elliptical_PD_Detect_top" _bottomColumn="Elliptical_PD_Detect_bottom" _heightColumn="height" _filtColumn="None" name="Elliptical_PD_Detect" type="0" xAxisUnit="us" xAxisLabel="PulseDuration" yAxisLabel="None" windowName="Elliptical370_PD" _rawColumn="Elliptical_PD_Detect_raw" fill="True" style="1" _fitFunction="None" properties="&lt;trace.PlottedTrace.PlottedTraceProperties object at 0x0000020A9A360A08&gt;">
+#         <PlottedTraceProperties averageSameX="True" combinePoints="0" averageType="0"/>
+#       </TracePlotting>
+#       <TracePlotting _xColumn="x" _yColumn="Elliptical_PD_Cool" _topColumn="Elliptical_PD_Cool_top" _bottomColumn="Elliptical_PD_Cool_bottom" _heightColumn="height" _filtColumn="None" name="Elliptical_PD_Cool" type="0" xAxisUnit="us" xAxisLabel="PulseDuration" yAxisLabel="None" windowName="Elliptical370_PD" _rawColumn="Elliptical_PD_Cool_raw" fill="True" style="1" _fitFunction="None" properties="&lt;trace.PlottedTrace.PlottedTraceProperties object at 0x0000020A99C2B748&gt;">
+#         <PlottedTraceProperties averageSameX="True" combinePoints="0" averageType="0"/>
+#       </TracePlotting>
+#       <TracePlotting _xColumn="x" _yColumn="nbright" _topColumn="nbright_top" _bottomColumn="nbright_bottom" _heightColumn="height" _filtColumn="None" name="nbright" type="0" xAxisUnit="us" xAxisLabel="PulseDuration" yAxisLabel="None" windowName="Result Monitor" _rawColumn="nbright_raw" fill="True" style="1" _fitFunction="None" properties="&lt;trace.PlottedTrace.PlottedTraceProperties object at 0x0000020A9AA07B48&gt;">
+#         <PlottedTraceProperties averageSameX="True" combinePoints="0" averageType="0"/>
+#       </TracePlotting>
+#     </TracePlottingList>
+#   </Variables>
+# </DataFileHeader>
+1666895318.0443141	1666895318.0443141	0	0.0024	12	0.0006851363722264552	0.0009126046099623628	34.957	174785	0.04180729601397345	0.04180729601397345	0.81	4050	0.0057108486410749615	0.00558463919513541	46.1396	230698	0.048031031635808116	0.048031031635808116	0.005	25	0.0009933727334638341	0.0012110808547900866	30.6634	153317	0.03915571478085925	0.03915571478085925	0.8348	4174.0	0	0	0.3192230224609375	2615075	0.31912688532274286	-0.3189294830580421	0.399077880859375	3269246	0.3989446610613961	-0.39872394504107056	0.8174	4087.0	0	0
+1666895350.9918132	1666895350.9918132	1	0.007	35	0.001176102224698418	0.001389925136821517	71.4324	357162	0.059763032051595236	0.059763032051595236	0.8336	4168	0.0054349356232784585	0.005298989800190279	96.5326	482663	0.06947395195323208	0.06947395195323208	0.0116	58	0.0015131593204355653	0.001721350821624468	65.638	328190	0.057287869571140446	0.057287869571140446	0.894	4470.0	0	0	0.37285595703125	3054436	0.37273505462103257	-0.37252171300954456	0.5922408447265625	4851637	0.5920138082725609	-0.5917449309306537	0.8522	4261.0	0	0
+1666895383.5553746	1666895383.5553746	2	0.1562	781	0.005164071032838863	0.005304240984592923	71.0434	355217	0.05960008389255841	0.05960008389255841	0.97	4850	0.002611906447516521	0.0024161594210199144	95.0508	475254	0.06893866839445044	0.06893866839445044	0.0144	72	0.0016845365528431848	0.0018902442393112055	63.9796	319898	0.05655952616491761	0.05655952616491761	1.34	6700.0	0	0	0.36956799316406247	3027501	0.36944862619750063	-0.36923622732646894	0.5800496826171875	4751767	0.5798286961661075	-0.5795626006080413	1.1406	5703.0	0	0
+1666895417.5693176	1666895417.5693176	3	0.8632	4316	0.005033904087819896	0.004885664912752108	74.369	371845	0.06097909477845666	0.06097909477845666	0.3914	1957	0.006979554731638304	0.007023615212495615	93.1822	465911	0.06825767356129273	0.06825767356129273	0.0084	42	0.0012883652161325126	0.0015001528351575085	61.6648	308324	0.05552693040318364	0.05552693040318364	2.1514	10757.0	0	0	0.3703243408203125	3033697	0.37020462083264927	-0.36999200472787286	0.57843408203125	4738532	0.5782138962476759	-0.577948171523282	1.263	6315.0	0	0
+1666895451.819327	1666895451.819327	4	0.4424	2212	0.007111596242109219	0.007134959554864151	70.689	353445	0.05945124052532461	0.05945124052532461	0.586	2930	0.007082435362991357	0.007047548541900817	92.4472	462236	0.06798794010705134	0.06798794010705134	0.0116	58	0.0015131593204355653	0.001721350821624468	62.75	313750	0.0560133912560202	0.0560133912560202	1.5172	7586.0	0	0	0.369547119140625	3027330	0.3694277619153233	-0.369215369042757	0.5722299804687501	4687708	0.5720128669274771	-0.5717485710846462	1.04	5200.0	0	0
+1666895489.3547523	1666895489.3547523	5	0.4334	2167	0.007093843256266497	0.0071208579484391965	77.6786	388393	0.062321184199275285	0.062321184199275285	0.9792	4896	0.00222089279749349	0.0020197674552069333	101.8668	509334	0.0713676397255787	0.0713676397255787	0.663	3315	0.006817245674400674	0.006751083665006097	69.2806	346403	0.05885601073807161	0.05885601073807161	4.498	22490.0	0	0	0.381231689453125	3123050	0.3811068663591967	-0.38089114183238887	0.604747802734375	4954094	0.6045145447623721	-0.6042428431737432	2.0756	10378.0	0	0
+1666895524.9741917	1666895524.9741917	6	0.1662	831	0.005296414564476493	0.00543244310952834	76.538	382690	0.061861943066799964	0.061861943066799964	0.4558	2279	0.00713370245308198	0.007151629857980679	99.488	497440	0.07052942648285182	0.07052942648285182	0.1046	523	0.004347399593128284	0.004509180588264022	66.408	332040	0.05762291210968082	0.05762291210968082	1.2066	6033.0	0	0	0.37444812011718753	3067479	0.3743264734370437	-0.3741126768069539	0.5833654785156249	4778930	0.583142847998581	-0.5828759929700278	0.7266	3633.0	0	0
+1666895561.0024035	1666895561.0024035	7	0.5084	2542	0.0071710464525864825	0.00716763961442346	73.3266	366633	0.06055022708462785	0.06055022708462785	0.6026	3013	0.007040726550698317	0.006999101924993312	98.4446	492223	0.07015860602948151	0.07015860602948151	0.6684	3342	0.006791527503002381	0.006723169565717835	66.562	332810	0.057689687119969725	0.057689687119969725	4.293	21465.0	0	0	0.37395947265625	3063476	0.37383805444997353	-0.37362439736563163	0.58152978515625	4763892	0.58130806496196	-0.5810416301245191	1.7794	8897.0	0	0
+1666895598.383392	1666895598.383392	8	0.2386	1193	0.006074236898476304	0.006180510043513637	69.9424	349712	0.059136452379222076	0.059136452379222076	0.961	4805	0.00293464752160999	0.0027435550002133935	95.3044	476522	0.06903057293692412	0.06903057293692412	0.4986	2493	0.007170029060787453	0.007170596866061751	65.635	328175	0.05728656037850413	0.05728656037850413	3.4326	17163.0	0	0	0.37328784179687496	3057974	0.3731667375464504	-0.3729532724122936	0.5809873046875	4759448	0.5807658534465328	-0.58049954291005	1.6982	8491.0	0	0

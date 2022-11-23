@@ -1,0 +1,156 @@
+<DataFileHeader>
+  <Variables>
+    <Element name="PulseProgram" type="dict">
+      <Element name="PulseProgram" type="str">D:/Users/Public/Documents/experiments/qscout_1-1/config/PulseProgramsPlus/QSCOUT_RFSoC_Basic.ppp</Element>
+      <Element name="RAMStartAddress" type="int">0</Element>
+      <Element name="CoolingFreq" type="Quantity">222.80331936987142 MHz</Element>
+      <Element name="PumpingFreq" type="Quantity">228.30331936987142 MHz</Element>
+      <Element name="DetectFreq" type="Quantity">228.30331936987142 MHz</Element>
+      <Element name="CoolLockSetPoint" type="Quantity">0.4 V</Element>
+      <Element name="DetectLockSetPoint" type="Quantity">0.3 V</Element>
+      <Element name="Static370LockSetPoint" type="Quantity">0.4 V</Element>
+      <Element name="MS_Delta" type="int">0</Element>
+      <Element name="SB_Freq" type="Quantity">0 kHz</Element>
+      <Element name="MaxCoolingRepeat" type="Quantity">25000</Element>
+      <Element name="InFibers" type="Quantity">1</Element>
+      <Element name="NIons" type="Quantity">3</Element>
+      <Element name="PresenceThreshold" type="Quantity">67.5</Element>
+      <Element name="FiberPresenceThreshold" type="Quantity">15.0</Element>
+      <Element name="CoolingTime" type="Quantity">1.5 ms</Element>
+      <Element name="PumpTime" type="Quantity">30 µs</Element>
+      <Element name="DetectTime" type="Quantity">400 µs</Element>
+      <Element name="experiments" type="Quantity">5000</Element>
+      <Element name="DoRFSoC" type="int">1</Element>
+      <Element name="Do355SidebandCool" type="Quantity">1</Element>
+      <Element name="EOMDelay" type="Quantity">1.2 µs</Element>
+      <Element name="RFSoCDelay" type="int">0</Element>
+      <Element name="DoTickle" type="int">0</Element>
+      <Element name="TickleFreq" type="float">0.0</Element>
+      <Element name="Tickle_Offset" type="int">0</Element>
+      <Element name="Tickle_Amp" type="int">0</Element>
+      <Element name="Servo370Time" type="int">0</Element>
+      <Element name="TensorScaling" type="int">1</Element>
+      <Element name="PulseDuration" type="Quantity">18.240566705218786 µs</Element>
+      <Element name="AmpOverride" type="int">-1</Element>
+      <Element name="coolSendMask" type="int">18446744073709551615</Element>
+      <Element name="j.pd.pulse_duration" type="Quantity">-1 µs</Element>
+      <Element name="j.__global_delay__" type="Quantity">-1.35 µs</Element>
+      <Element name="j.__repeats__" type="Quantity">5000</Element>
+      <Element name="j.pd.microwave_frequency" type="Quantity">42.81677482938523 MHz</Element>
+      <Element name="j.pd.pump_time" type="Quantity">2 µs</Element>
+      <Element name="j.pd.pump_freq" type="Quantity">85 MHz</Element>
+      <Element name="j.pd.pump_amp" type="Quantity">200</Element>
+      <Element name="j.pd.global_center_frequency" type="Quantity">200 MHz</Element>
+      <Element name="j.pd.ia_center_frequency" type="Quantity">230 MHz</Element>
+      <Element name="j.pd.adjusted_carrier_splitting" type="Quantity">29.691774829385395 MHz</Element>
+      <Element name="j.pd.principal_axis_rotation" type="Quantity">45</Element>
+      <Element name="j.pd.higher_motional_mode_frequencies" type="Quantity">[2.17442713,2.10229334,2.0011059 ] MHz</Element>
+      <Element name="j.pd.lower_motional_mode_frequencies" type="Quantity">[1.91487089,1.83273987,1.71478855] MHz</Element>
+      <Element name="j.pd.co_ia_resonant_pi_time" type="Quantity">18.240566705218786 µs</Element>
+      <Element name="j.pd.counter_resonant_pi_time" type="Quantity">19.422989556017303 µs</Element>
+      <Element name="j.pd.amp0_coprop_list" type="Quantity">[ 0.,35.,30.,30., 0., 0., 0., 0.] </Element>
+      <Element name="j.pd.amp1_coprop_list" type="Quantity">[ 0.        ,56.78374996,59.        ,72.69685674, 0.        , 0.        ,
+  0.        , 0.        ] </Element>
+      <Element name="j.pd.amp0_counterprop" type="Quantity">100</Element>
+      <Element name="j.pd.amp1_counterprop_list" type="Quantity">[ 0.        ,11.83784631,11.        ,11.73370442, 0.        , 0.        ,
+  0.        , 0.        ] </Element>
+      <Element name="j.pd.MS_pulse_duration" type="Quantity">250 µs</Element>
+      <Element name="j.pd.MS_delta" type="Quantity">[-19.91480791, -9.37382455,-20.08025612] kHz</Element>
+      <Element name="j.pd.MS_framerot" type="Quantity">-9.773221665487405</Element>
+      <Element name="j.pd.MS_red_amp_list" type="Quantity">[ 0.        ,58.86720458,65.        ,65.23577682, 0.        , 0.        ,
+  0.        , 0.        ] </Element>
+      <Element name="j.pd.MS_blue_amp_list" type="Quantity">[ 0.        ,66.08185269,75.33400573,70.49170894, 0.        , 0.        ,
+  0.        , 0.        ] </Element>
+      <Element name="j.pd.num_qubits" type="Quantity">3</Element>
+      <Element name="j.pd.target0" type="Quantity">2</Element>
+      <Element name="j.pd.target1" type="Quantity">3</Element>
+      <Element name="j.pd.wait_time" type="Quantity">0 ms</Element>
+      <Element name="j.pd.microwave_pi_time" type="Quantity">72.1176091354867 µs</Element>
+      <Element name="j.pd.amp0_global_SBC" type="Quantity">200</Element>
+      <Element name="j.pd.amp1_single_SBC" type="Quantity">200</Element>
+      <Element name="j.pd.sb_cool_gap_time" type="float">1e-06</Element>
+      <Element name="j.pd.sb_gap_time" type="float">1e-06</Element>
+      <Element name="j.pd.global_delay" type="float">1e-06</Element>
+      <Element name="j.pd.n_cool_loops" type="Quantity">100</Element>
+      <Element name="j.pd.do_sideband_cool1" type="Quantity">1</Element>
+      <Element name="j.pd.do_sideband_cool2" type="Quantity">1</Element>
+      <Element name="j.pd.SK1_framerot" type="int">0</Element>
+      <Element name="j.pd.amp0_coprop_global" type="Quantity">100</Element>
+      <Element name="j.pd.amp1_coprop_global" type="Quantity">100</Element>
+      <Element name="j.pd.rsb_higher_mm_pi_times" type="Quantity">[[6.27757618,9.61435968,4.55877469],
+ [7.10040238,6.11213132,4.16699759],
+ [4.98662656,5.964596  ,5.42930154]] µs</Element>
+      <Element name="j.pd.rsb_lower_mm_pi_times" type="Quantity">[[ 5.48682369, 3.84540249, 7.07157783],
+ [ 5.88669756, 4.85622737,12.97329733],
+ [ 4.81119182, 5.33135704,12.97329733]] µs</Element>
+      <Element name="j.pd.sb_probe_freq" type="Quantity">0 kHz</Element>
+      <Element name="j.pd.ms_bluecarrier_ampcorrection" type="float">1.0</Element>
+      <Element name="j.pd.MS_freqwidth" type="float">300000.0</Element>
+      <Element name="j.pd.MS_global_amp" type="float">100.0</Element>
+      <Element name="j.pd.MS_phi" type="Quantity">88.50122021171966</Element>
+      <Element name="j.pd.co_global_resonant_pi_time" type="float">1e-05</Element>
+      <Element name="j.pd.microwave_amp0" type="int">200</Element>
+      <Element name="j.pd.MS_framerot_IA" type="Quantity">1.31</Element>
+      <Element name="j.pd.target2" type="int">1</Element>
+      <Element name="j.pd.target3" type="int">7</Element>
+      <Element name="j.pd.target4" type="int">6</Element>
+      <Element name="j.pd.Counter_Amp0_M" type="float">2.2010849917603803</Element>
+      <Element name="j.__index__" type="int">0</Element>
+      <Element name="j.pd.MS_framerot_cal" type="float">0.0</Element>
+      <Element name="j.theta0" type="float">3.11251</Element>
+      <Element name="j.halftheta1" type="int">0</Element>
+      <Element name="j.nhalftheta1" type="int">0</Element>
+      <Element name="j.halftheta2" type="int">0</Element>
+      <Element name="j.nhalftheta2" type="int">0</Element>
+    </Element>
+    <Element name="Scan" type="dict">
+      <Element name="scanParameter" type="str">PulseDuration</Element>
+      <Element name="scanTarget" type="str">Remote</Element>
+      <Element name="scantype" type="int">0</Element>
+      <Element name="scanMode" type="int">5</Element>
+      <Element name="xUnit" type="str">us</Element>
+      <Element name="xExpression" type="str"></Element>
+      <Element name="loadPP" type="bool">True</Element>
+      <Element name="loadPPName" type="str">JAFScan_Tufts_LMG</Element>
+      <Element name="parallelInternalScanParameter" type="str">None</Element>
+    </Element>
+    <ColumnSpec>timeTickFirst, timeTickLast, x, q1_detect, q1_detect_raw, q1_detect_bottom, q1_detect_top, q1_cool, q1_cool_raw, q1_cool_bottom, q1_cool_top, q0_detect, q0_detect_raw, q0_detect_bottom, q0_detect_top, q0_cool, q0_cool_raw, q0_cool_bottom, q0_cool_top, qn1_detect, qn1_detect_raw, qn1_detect_bottom, qn1_detect_top, qn1_cool, qn1_cool_raw, qn1_cool_bottom, qn1_cool_top, chain_as_int, chain_as_int_raw, chain_as_int_bottom, chain_as_int_top, Elliptical_PD_Detect, Elliptical_PD_Detect_raw, Elliptical_PD_Detect_bottom, Elliptical_PD_Detect_top, Elliptical_PD_Cool, Elliptical_PD_Cool_raw, Elliptical_PD_Cool_bottom, Elliptical_PD_Cool_top, nbright, nbright_raw, nbright_bottom, nbright_top</ColumnSpec>
+    <Element name="comment" type="str"></Element>
+    <Element name="lastDataAquired" type="datetime">2022-10-27 18:33:55.196998+00:00</Element>
+    <Element name="name" type="str"></Element>
+    <Element name="traceCreation" type="datetime">2022-10-27 18:29:09.824408+00:00</Element>
+    <Element name="traceFinalized" type="datetime">2022-10-27 18:33:55.776451+00:00</Element>
+    <TracePlottingList>
+      <TracePlotting _xColumn="x" _yColumn="q1_detect" _topColumn="q1_detect_top" _bottomColumn="q1_detect_bottom" _heightColumn="height" _filtColumn="None" name="q1_detect" type="0" xAxisUnit="us" xAxisLabel="PulseDuration" yAxisLabel="None" windowName="Scan Data" _rawColumn="q1_detect_raw" fill="True" style="1" _fitFunction="None" properties="&lt;trace.PlottedTrace.PlottedTraceProperties object at 0x0000020A986E9208&gt;">
+        <PlottedTraceProperties averageSameX="True" combinePoints="0" averageType="0"/>
+      </TracePlotting>
+      <TracePlotting _xColumn="x" _yColumn="q1_cool" _topColumn="q1_cool_top" _bottomColumn="q1_cool_bottom" _heightColumn="height" _filtColumn="None" name="q1_cool" type="0" xAxisUnit="us" xAxisLabel="PulseDuration" yAxisLabel="None" windowName="CoolCounts" _rawColumn="q1_cool_raw" fill="True" style="1" _fitFunction="None" properties="&lt;trace.PlottedTrace.PlottedTraceProperties object at 0x0000020AA05CC788&gt;">
+        <PlottedTraceProperties averageSameX="True" combinePoints="0" averageType="0"/>
+      </TracePlotting>
+      <TracePlotting _xColumn="x" _yColumn="q0_detect" _topColumn="q0_detect_top" _bottomColumn="q0_detect_bottom" _heightColumn="height" _filtColumn="None" name="q0_detect" type="0" xAxisUnit="us" xAxisLabel="PulseDuration" yAxisLabel="None" windowName="Scan Data" _rawColumn="q0_detect_raw" fill="True" style="1" _fitFunction="None" properties="&lt;trace.PlottedTrace.PlottedTraceProperties object at 0x0000020AA05CC9C8&gt;">
+        <PlottedTraceProperties averageSameX="True" combinePoints="0" averageType="0"/>
+      </TracePlotting>
+      <TracePlotting _xColumn="x" _yColumn="q0_cool" _topColumn="q0_cool_top" _bottomColumn="q0_cool_bottom" _heightColumn="height" _filtColumn="None" name="q0_cool" type="0" xAxisUnit="us" xAxisLabel="PulseDuration" yAxisLabel="None" windowName="CoolCounts" _rawColumn="q0_cool_raw" fill="True" style="1" _fitFunction="None" properties="&lt;trace.PlottedTrace.PlottedTraceProperties object at 0x0000020AA05CCD48&gt;">
+        <PlottedTraceProperties averageSameX="True" combinePoints="0" averageType="0"/>
+      </TracePlotting>
+      <TracePlotting _xColumn="x" _yColumn="qn1_detect" _topColumn="qn1_detect_top" _bottomColumn="qn1_detect_bottom" _heightColumn="height" _filtColumn="None" name="qn1_detect" type="0" xAxisUnit="us" xAxisLabel="PulseDuration" yAxisLabel="None" windowName="Scan Data" _rawColumn="qn1_detect_raw" fill="True" style="1" _fitFunction="None" properties="&lt;trace.PlottedTrace.PlottedTraceProperties object at 0x0000020AA05CC2C8&gt;">
+        <PlottedTraceProperties averageSameX="True" combinePoints="0" averageType="0"/>
+      </TracePlotting>
+      <TracePlotting _xColumn="x" _yColumn="qn1_cool" _topColumn="qn1_cool_top" _bottomColumn="qn1_cool_bottom" _heightColumn="height" _filtColumn="None" name="qn1_cool" type="0" xAxisUnit="us" xAxisLabel="PulseDuration" yAxisLabel="None" windowName="CoolCounts" _rawColumn="qn1_cool_raw" fill="True" style="1" _fitFunction="None" properties="&lt;trace.PlottedTrace.PlottedTraceProperties object at 0x0000020AA0F00608&gt;">
+        <PlottedTraceProperties averageSameX="True" combinePoints="0" averageType="0"/>
+      </TracePlotting>
+      <TracePlotting _xColumn="x" _yColumn="chain_as_int" _topColumn="chain_as_int_top" _bottomColumn="chain_as_int_bottom" _heightColumn="height" _filtColumn="None" name="chain_as_int" type="0" xAxisUnit="us" xAxisLabel="PulseDuration" yAxisLabel="None" windowName="Result Monitor" _rawColumn="chain_as_int_raw" fill="True" style="1" _fitFunction="None" properties="&lt;trace.PlottedTrace.PlottedTraceProperties object at 0x0000020A98B27308&gt;">
+        <PlottedTraceProperties averageSameX="False" combinePoints="0" averageType="0"/>
+      </TracePlotting>
+      <TracePlotting _xColumn="x" _yColumn="Elliptical_PD_Detect" _topColumn="Elliptical_PD_Detect_top" _bottomColumn="Elliptical_PD_Detect_bottom" _heightColumn="height" _filtColumn="None" name="Elliptical_PD_Detect" type="0" xAxisUnit="us" xAxisLabel="PulseDuration" yAxisLabel="None" windowName="Elliptical370_PD" _rawColumn="Elliptical_PD_Detect_raw" fill="True" style="1" _fitFunction="None" properties="&lt;trace.PlottedTrace.PlottedTraceProperties object at 0x0000020A9A360A08&gt;">
+        <PlottedTraceProperties averageSameX="True" combinePoints="0" averageType="0"/>
+      </TracePlotting>
+      <TracePlotting _xColumn="x" _yColumn="Elliptical_PD_Cool" _topColumn="Elliptical_PD_Cool_top" _bottomColumn="Elliptical_PD_Cool_bottom" _heightColumn="height" _filtColumn="None" name="Elliptical_PD_Cool" type="0" xAxisUnit="us" xAxisLabel="PulseDuration" yAxisLabel="None" windowName="Elliptical370_PD" _rawColumn="Elliptical_PD_Cool_raw" fill="True" style="1" _fitFunction="None" properties="&lt;trace.PlottedTrace.PlottedTraceProperties object at 0x0000020A99C2B748&gt;">
+        <PlottedTraceProperties averageSameX="True" combinePoints="0" averageType="0"/>
+      </TracePlotting>
+      <TracePlotting _xColumn="x" _yColumn="nbright" _topColumn="nbright_top" _bottomColumn="nbright_bottom" _heightColumn="height" _filtColumn="None" name="nbright" type="0" xAxisUnit="us" xAxisLabel="PulseDuration" yAxisLabel="None" windowName="Result Monitor" _rawColumn="nbright_raw" fill="True" style="1" _fitFunction="None" properties="&lt;trace.PlottedTrace.PlottedTraceProperties object at 0x0000020A9AA07B48&gt;">
+        <PlottedTraceProperties averageSameX="True" combinePoints="0" averageType="0"/>
+      </TracePlotting>
+    </TracePlottingList>
+  </Variables>
+</DataFileHeader>
