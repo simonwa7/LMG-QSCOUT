@@ -2,3 +2,4 @@
 .vscode/
 __pycache__/
 archived/
+.DS_Store
